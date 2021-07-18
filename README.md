@@ -1,7 +1,7 @@
 # Readme 
 
-Here are some functions that python use with list, tuple, dictionary, string, sets...
+Here is sudoku solution
 
 ## SubHeader
 
-trying something
+Trying to do a interfice inside python to implement the sudoku solution
