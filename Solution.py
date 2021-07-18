@@ -1,10 +1,10 @@
 from pprint import pprint
 
 def find_next_empty(puzzle):
-    for r in range(9):
-        for c in range(9):
-            if puzzle[r][c] == 0 :
-                return r, c
+    for row in range(9):
+        for column in range(9):
+            if puzzle[row][column] == 0 :
+                return row, column
     
     return None, None
 
@@ -23,9 +23,9 @@ def is_valid(puzzle, guess, row, col):
     row_start = (row // 3) * 3
     col_start = (col // 3) * 3
 
-    for r in range(row_start, row_start + 3):
-        for c in range(col_start, col_start + 3):
-            if puzzle[r][c] == guess:
+    for row in range(row_start, row_start + 3):
+        for column in range(col_start, col_start + 3):
+            if puzzle[row][column] == guess:
                 return False
 
     return True
